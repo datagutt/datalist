@@ -23,7 +23,7 @@ gamer.no##a:not([role="link"])[href^="/_a/c?name="]:upward(2)
 ! Kode24.no
 ! Remove the "hot" flashing animation
 ! Side note: The sponsor and jobs part of the site is not blocked as it is not intrusive
-kode24.no##.preview.hot::before:style(animation: none !important;)
+kode24.no##.preview.hot::before:style(display: none;)
 
 ! TU Media
 digi.no,tu.no###brandBoardTop
