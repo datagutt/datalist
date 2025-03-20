@@ -1,4 +1,4 @@
 # datalist
 
 Personal UBlock / Adblock filter list
-<https://github.com/datagutt/datalist/blob/main/lists/datalist.txt>
+<https://raw.githubusercontent.com/datagutt/datalist/refs/heads/main/lists/datalist.txt>
