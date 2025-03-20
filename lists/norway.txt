@@ -20,6 +20,11 @@ gamer.no##a:not([role="link"])[href^="/_a/c?name="]:upward(2)
 # Whitelist this as it is an anti-adblock check
 @@|https://s.bo3.no/gamer/vendor/_a/gpt.js
 
+! Kode24.no
+! Remove the "hot" flashing animation
+! Side note: The sponsor and jobs part of the site is not blocked as it is not intrusive
+kode24.no##.preview.hot::before:style(animation: none !important;)
+
 ! TU Media
 digi.no,tu.no###brandBoardTop
 digi.no,tu.no##main div > div:has([class^='text-xs']:has-text(/annonse/)):not(div:has(.col-span-12))
