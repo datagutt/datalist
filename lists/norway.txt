@@ -36,3 +36,16 @@ dagbladet.no##.breaking-just-now-slug
 dagbladet.no##.breaking-rolling-text-slug
 dagbladet.no##article.preview.breaking--just-now .content>a::before:style(display: none !important)
 dagbladet.no##div>article[data-element-guid]>div a:style(padding-top: 0px !important;)
+
+! Gaffa
+gaffa.no##a[href*="/annonser/"], a[href*="/sponset-"], div[id^="cncpt-"]
+gaffa.no##.article-overview__col:has(.gpt--loaded)
+gaffa.no##.link-list:has(a[href*="casino"])
+
+gaffa.se##a[href*="/annonser/"], a[href*="/sponsrat-"], div[id^="cncpt-"]
+gaffa.se##.article-overview__col:has(.gpt--loaded)
+gaffa.se##.link-list:has(a[href*="casino"])
+
+gaffa.dk##a[href*="/annonser/"], a[href*="/sponsoreret-"], div[id^="cncpt-"]
+gaffa.dk##.article-overview__col:has(.gpt--loaded)
+gaffa.dk##.link-list:has(a[href*="casino"])
