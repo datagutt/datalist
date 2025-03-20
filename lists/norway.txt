@@ -1,0 +1,26 @@
+[Adblock Plus 3.13]
+! Title: 🇳🇴 Datalist - Norway edition
+! Version: 20March2025v1
+! Expires: 1 day
+! Description: 
+! Homepage: https://github.com/datagutt/datalist
+
+! Gamer.no
+#gamer.no##div:has(> [data-size-mapping])
+#gamer.no##[data-size-mapping]
+#gamer.no##[data-unit="gamer_fullscreen"]
+#gamer.no##[data-name="gamer_toppbanner"]
+gamer.no##div.col-12.col-lg-7
+gamer.no##.site__header + div + *:not(div,section,main,footer)
+gamer.no##[id$="gamer-skyskraper-venstre"]:upward(1)
+gamer.no##[id$="gamer-skyskraper-hoyre"]:upward(1)
+gamer.no##[id$="gamer-midtbanner"]:upward(1)
+gamer.no##[id$="gamer-netboard"]:upward(1)
+gamer.no##a:not([role="link"])[href^="/_a/c?name="]:upward(2)
+# Whitelist this as it is an anti-adblock check
+@@|https://s.bo3.no/gamer/vendor/_a/gpt.js
+
+! TU Media
+digi.no,tu.no###brandBoardTop
+digi.no,tu.no##main div > div:has([class^='text-xs']:has-text(/annonse/)):not(div:has(.col-span-12))
+digi.no,tu.no##.countdown-gradient

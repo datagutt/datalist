@@ -1,0 +1,15 @@
+[Adblock Plus 3.13]
+! Title: 🤡 Datalist - Anti troll
+! Version: 20March2025v1
+! Expires: 1 day
+! Description: Filters for links that are known to be troll links.
+! Homepage: https://github.com/datagutt/datalist
+
+! Jebaited filter
+*##a[href*="/watch?v=d1YBv2mWll0"]:before:style(content: "(Warning: Jebaited) " !important; color: #E6000D !important; visibility: visible)
+*##a[href*="%2Fwatch%3Fv%3Dd1YBv2mWll0"]:before:style(content: "(Warning: Jebaited) " !important; color: #E6000D !important; visibility: visible)
+*##a[href*="youtu.be/d1YBv2mWll0"]:before:style(content: "(Warning: Jebaited) " !important; color: #E6000D !important; visibility: visible)
+*##a[href*="youtube-nocookie.com/embed/d1YBv2mWll0"]:before:style(content: "(Warning: Jebaited) " !important; color: #E6000D !important; visibility: visible)
+
+! Screamers
+pnrtscr.com

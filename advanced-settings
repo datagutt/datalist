@@ -1,0 +1,48 @@
+   allowGenericProceduralFilters false
+               assetFetchTimeout 30
+       autoCommentFilterTemplate {{date}} {{origin}}
+      autoUpdateAssetFetchPeriod 5
+      autoUpdateDelayAfterLaunch 37
+                autoUpdatePeriod 1
+             benchmarkDatasetURL unset
+                blockingProfiles 11111/#F00 11010/#C0F 11001/#00F 00001
+         cacheStorageCompression true
+cacheStorageCompressionThreshold 65536
+         cacheStorageMultithread 2
+   cacheControlForFirefox1376932 no-cache, no-store, must-revalidate
+         cloudStorageCompression true
+                 cnameIgnoreList unset
+             cnameIgnore1stParty true
+           cnameIgnoreExceptions true
+         cnameIgnoreRootDocument true
+              cnameReplayFullURL false
+                 consoleLogLevel info
+                 debugAssetsJson false
+                 debugScriptlets false
+          debugScriptletInjector false
+              differentialUpdate true
+              disableWebAssembly false
+                     dnsCacheTTL 600
+               dnsResolveEnabled true
+      extensionUpdateForceReload false
+                filterAuthorMode false
+                 loggerPopupType popup
+    manualUpdateAssetFetchPeriod 500
+              modifyWebextFlavor unset
+                  noScriptingCSP script-src http: https:
+                   popupFontSize unset
+      popupPanelDisabledSections 0
+            popupPanelHeightMode 0
+        popupPanelLockedSections 0
+           popupPanelOrientation unset
+     requestJournalProcessPeriod 1000
+            requestStatsDisabled false
+            selfieDelayInSeconds 53
+    strictBlockingBypassDuration 120
+           toolbarWarningTimeout 60
+             trustedListPrefixes ublock-
+                   uiPopupConfig unset
+                        uiStyles unset
+   updateAssetBypassBrowserCache false
+           userResourcesLocation https://raw.githubusercontent.com/pixeltris/TwitchAdSolutions/492c1db4cf2e5bae97add5a956128e948f1cd515/video-swap-new/video-swap-new-ublock-origin.js
+                 cacheStorageAPI unset

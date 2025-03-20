@@ -1,0 +1,169 @@
+[Adblock Plus 3.13]
+! Title: Datalist - Stolen filters
+! Version: 20March2025v1
+! Expires: 1 day
+! Description: Filters stolen from other lists
+! Homepage: https://github.com/datagutt/datalist
+
+
+! -------- https://github.com/kowith337/PersonalFilterListCollection --------
+
+! Network Requests - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! [CloudFlare Beacon]
+||cloudflareinsights.com/beacon.$important
+
+! [GamingDose] Prohibit infinite scroll article reader
+||gamingdose.com/wp-content/plugins/ajax-load-more$script,stylesheet
+
+! [Google]
+! - Tracking users with some parameter tag (e.g. 'ei', 'vet'), also try to "ping" every actions!
+||google.*$beacon,important
+||google.*/*?*&ei=$image,xmlhttprequest,important
+||google.*/*?ei=$image,xmlhttprequest,important
+||google.*/VisualFrontendUi/$important,~xmlhttprequest
+||google.*/async/bgasy?*&ei=*$important
+||google.*/async/bgasy?ei=*$important
+||google.*/async/irc?$important
+||google.*/gen_204?*&ei=$important
+||google.*/gen_204?ei=$important
+||google.*/images/phd/px.gif$important
+||google.*/imgevent?*&ei=$important
+||google.*/imgevent?ei=$important
+||google.*/log?$important
+!
+! * Unbreak endless fetch images results
+@@||google.*/VisualFrontendUi/data/batchexecute?$xmlhttprequest
+
+
+! [OOKLA SpeedTest]
+||cloudfront.net/x.js$domain=speedtest.net,important
+||speedtest.net/choices/$important
+||speedtest.net/javascript/jquery-analytics$important
+
+! [Twitter]
+||twitter.com/*/jot/*$important
+||twitter.com/*/onboarding/referrer.json$important
+||twitter.com/*/promoted_content/$important
+||twitter.com/i/*/guide.json$important
+||twitter.com/live_pipeline/events?topic=*tweet_engagement*$important
+
+! [WallGif]
+||bnserving.com$domain=wallgif.com,important
+||cpm10.com$domain=wallgif.com,important
+||newrelic.com$domain=wallgif.com,important
+
+! Unneccessary Parameters - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! [DuckDuckGo]
+! - Remove tracking parameter that their use along with `improving` things!
+$removeparam=atb,domain=duckduckgo.com,important
+
+
+! Caused by "AdGuard Annoyances Filter - Anti-Adblock"
+@@||translate.googleusercontent.com^$generichide,badfilter
+
+! Script blocking for PRC sites
+*/log/$domain=bilibili.com
+||cm.bilibili.com^$all
+/bili-collect.js$all
+||bilibili.com^*/data/collector^$all
+||boss.hdslb.com^$all
+||bilibili.com/x/click-interface^$all
+||bilibili.com/*/is_forbid^$all
+||bilibili.com/*/log-reporter.js$all
+*/laputa-header/$all
+||hdslb.com/*/pcdn-$all
+||hdslb.com/*/nc-loader-$all
+
+
+! Non-basic filtering - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! [Nitter]
+! - For unclear reason, because I have use touchscreen notebook and found that I've redirected to donation page unintentionally,
+!   even I just tap onto the blank space, probably navigation header placement issue that will be a short time while page loading
+!   will be see some icon enlarged, absolutely it's `Liberapay` logo are cover the page entirely at that moment!
+#?#.inner-nav a[href*="liberapay.com/zedeus" i]
+!
+! - Remove unsupported card contents placeholder
+!   > Spaces: Remove empty box since it just a placeholder box that cannot show anything.
+!   > Broadcasts: Remove bottom card title, left only image preview.
+#?#.timeline-item .card-container[href*="/i/spaces/"]
+#?#.timeline-item .card-content-container[href*="/i/broadcasts/"] .card-content
+
+! DOM Permanent Remover - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+
+! [Facebook] Blame to AdGuard
+facebook.com#?#.AdBox:remove()
+facebook.com#?#.post-ads:remove()
+
+! [Nitter]
+#?#.inner-nav a[href*="liberapay"]:remove()
+
+
+! Specific requests filtering - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+
+! Handling parameters - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! Legitimate removers
+! Note: Only handling some query that not necessary to binding in for specific requests rather than `document`, this may conflict
+!       with "Anti survived tracking link warning" filterlist that strictly blocked page when shady parameters are binding with
+!       any URLs for keep tracking users, even you're visiting some sites off-of social platform.
+$from=facebook.com|messenger.com,important,removeparam=/logging\_?data\[\d+?\]/
+$from=steamcommunity.com|steampowered.com,important,removeparam=outc
+||facebook.com/*&entry*=$1p,xhr,important,removeparam=/^entry/
+||facebook.com/*&privacy_*=$1p,xhr,removeparam=/^privacy_/
+||facebook.com/*&__cft__*=$1p,removeparam=/^__cft__/
+||facebook.com/*&__tn__=$1p,xhr,important,removeparam=__tn__
+||facebook.com/*&__xts__*=$1p,removeparam=/^__xts__/
+||facebook.com/*?entry*=$1p,xhr,important,removeparam=/^entry/
+||facebook.com/*?privacy_*=$1p,xhr,removeparam=/^privacy_/
+||facebook.com/*?__cft__*=$1p,removeparam=/^__cft__/
+||facebook.com/*?__tn__=$1p,xhr,important,removeparam=__tn__
+||facebook.com/*?__xts__*=$1p,removeparam=/^__xts__/
+||fbcdn.net/*&_nc_*=$css,script,from=facebook.com|messenger.com,removeparam=/^_nc_/
+||fbcdn.net/*?_nc_*=$css,script,from=facebook.com|messenger.com,removeparam=/^_nc_/
+||steampowered.com/*&curator_*=$removeparam=/^curator_/
+||steampowered.com/*&ser=$removeparam=ser,important
+||steampowered.com/*&snr=$removeparam=snr,important
+||steampowered.com/*?curator_*=$removeparam=/^curator_/
+||steampowered.com/*?ser=$removeparam=ser,important
+||steampowered.com/*?snr=$removeparam=snr,important
+||youtube-nocookie.com/get_video_info?$xhr,removeparam=ei
+||youtube.com/get_video_info?$xhr,removeparam=ei
+
+! Reverse removers
+! - This will work like `removeparam` but what happened if the rules are reversed to exclude matched parameters only...?
+$doc,removeparam=~/^(ia[a-z]?|k([a-z0-9]+)?|q|uddg)/,from=duckduckgo.com
+||adintrend.tv/hd/live/i.php$frame,removeparam=~/^((c(h|x)|s)id)/
+
+! Aggressive removers
+! - This will remove all of queries, if it have any and without exceptions!
+||steamcommunity.com/login/home$removeparam,doc
+
+! Strict Blocking - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+||google.*/ads/*$important
+||liberapay.com/zedeus$document,important,from=~accident_nitter_nav_prevention
+||twitter.com/i/*/timeline/home.json$important,from=~tweetdeck.twitter.com|~to_make_sure_that_you_always_get_latest_tweets
+||twitter.com/i/api/*/HomeTimeline$xhr,method=post,important,from=~tweetdeck.twitter.com|~to_make_sure_that_you_always_get_tweets_from_followings_only
+! Resources Redirect  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+
+! HTML document filtering - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! Note: Require post-quantum of Firefox or any forks to read these rules, except for response header that it seems aim to support
+!       all platforms.
+facebook.com,instagram.com,messenger.com##^responseheader(set-cookie, datr)
+facebook.com,instagram.com,messenger.com##^responseheader(x-zero-eh)
+facebook.com,instagram.com,messenger.com##^responseheader(x-zero-rml)
+
+! Scriptlets Injection  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - !
+! [Legacy internal scriptlets]
+! Use only internal scriptlets provided by uBO for this section.
+! - Global Apply: Prevent use of auto-refresh, big companies mostly use for redirect to login page before viewing contents!
+*##+js(refresh-defuser)
+!
+! - Often show alert dialog when users click to links, also when users trying to right-click.
+checkkorn.com##+js(alert-buster)
+!
+! - Goolag search currently abusing and keep track users by inseting tag sign with random ID strings of `bsht` in case if some
+!   users remove their tracked parameters, such as `ei`, `rlz`, `ved`, `vet`, etc., I'll disable script name functions who called
+!   that, however, some regional domains (e.g. UK) doesn't have this thing appeared behind...
+google.*#?#+js(set-constant, s_LFn, noopFunc)
+!
+! - Prevent Telegram auto open its protocol to redirect into apps while viewing profile and/or group with browser.
+t.me##+js(no-setTimeout-if, protoUrl)

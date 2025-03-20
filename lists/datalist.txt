@@ -1,0 +1,22 @@
+[Adblock Plus 3.13]
+! Title: 🥷🏻 Datalist
+! Version: 20March2025v1
+! Expires: 1 day
+! Description: My personal filter list for Adblock Plus, uBlock Origin, AdGuard, AdBlock, Wipr, etc.
+! Homepage: https://github.com/datagutt/datalist
+
+!#include anti-troll.txt
+!#include norway.txt
+!#include personal.txt
+!#include security.txt
+!#include stolen.txt
+!#include twitch.txt
+
+! 2021-08-11 twitter new fonts - https://twitter.com/interlunations/status/1425509988726837249
+https://abs.twimg.com/responsive-web/client-web/Chirp-Heavy*.woff
+https://abs.twimg.com/responsive-web/client-web/Chirp-Bold*.woff
+https://abs.twimg.com/responsive-web/client-web/Chirp-Regular*.woff
+https://abs.twimg.com/responsive-web/client-web/Chirp-Medium*.woff
+https://abs.twimg.com/fonts/chirp-bold-web.woff
+https://abs.twimg.com/fonts/chirp-heavy-web.woff
+https://abs.twimg.com/fonts/chirp-regular-web.woff

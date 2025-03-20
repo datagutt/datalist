@@ -1,0 +1,26 @@
+[Adblock Plus 3.13]
+! Title: 🔒 Datalist - Privacy and security filters
+! Version: 20March2025v1
+! Expires: 1 day
+! Description: Filters for privacy and security.
+! Homepage: https://github.com/datagutt/datalist
+
+aegis.trovo.live
+tdm.trovo.live:8013
+api.vigo.one
+rocket.cozy.tv
+
+extensions-hub.com
+
+lordoftheentertainingostriches.com
+*.lordoftheentertainingostriches.com
+
+! Separate this to a separate AD list?
+||www.facebook.com/api/graphql/$xhr,replace=/\{"brs_content_label":[^\n]+?"category":"ENGAGEMENT[^\n]+?"cursor":"[^"]+"\}/{}/g,badfilter
+||www.facebook.com/api/graphql/$xhr,replace=/("category":"ENGAGEMENT"[^\n]+?"comet_sections":)\{[^\n]+?post_inform_treatment":[^}]+\}(,"encrypted_tracking)/\$1{}\$2/g
+
+dlive.tv##+js(aopw, Fingerprint2)
+api.im.qcloud.com
+
+youtube.com##ytd-rich-item-renderer:has(ytd-display-ad-renderer)
+youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)

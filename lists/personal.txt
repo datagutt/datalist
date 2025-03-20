@@ -1,0 +1,17 @@
+[Adblock Plus 3.13]
+! Title: 🥷🏻 Datalist - Personal filters
+! Version: 20March2025v1
+! Expires: 1 day
+! Description: Filters for my personal use, or that have not yet been added to the main lists.
+! Homepage: https://github.com/datagutt/datalist
+
+! Whitelists
+@@||mncdn.com^
+@@||/socket.io^$all
+
+! Not sure if this is needed anymore
+youtube.com##ytd-rich-item-renderer:has(ytd-display-ad-renderer)
+youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
+
+! Remove the "Unfollow" button on GitHub
+github.com##.user-following-container > form[action^="/users/unfollow"]
