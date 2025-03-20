@@ -29,3 +29,10 @@ kode24.no##.preview.hot::before:style(display: none;)
 digi.no,tu.no###brandBoardTop
 digi.no,tu.no##main div > div:has([class^='text-xs']:has-text(/annonse/)):not(div:has(.col-span-12))
 digi.no,tu.no##.countdown-gradient
+
+! Dagbladet.no
+! Remove "breaking now" and "rolling text" news
+dagbladet.no##.breaking-just-now-slug
+dagbladet.no##.breaking-rolling-text-slug
+dagbladet.no##article.preview.breaking--just-now .content>a::before:style(display: none !important)
+dagbladet.no##div>article[data-element-guid]>div a:style(padding-top: 0px !important;)
