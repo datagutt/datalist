@@ -6,10 +6,10 @@
 ! Homepage: https://github.com/datagutt/datalist
 
 ! Gamer.no
-#gamer.no##div:has(> [data-size-mapping])
-#gamer.no##[data-size-mapping]
-#gamer.no##[data-unit="gamer_fullscreen"]
-#gamer.no##[data-name="gamer_toppbanner"]
+!gamer.no##div:has(> [data-size-mapping])
+!gamer.no##[data-size-mapping]
+!gamer.no##[data-unit="gamer_fullscreen"]
+!gamer.no##[data-name="gamer_toppbanner"]
 gamer.no##div.col-12.col-lg-7
 gamer.no##.site__header + div + *:not(div,section,main,footer)
 gamer.no##[id$="gamer-skyskraper-venstre"]:upward(1)
