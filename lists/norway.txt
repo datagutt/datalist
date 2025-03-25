@@ -1,6 +1,6 @@
 [Adblock Plus 3.13]
 ! Title: 🇳🇴 Datalist - Norway edition
-! Version: 25March2025v1
+! Version: 25March2025v2
 ! Expires: 1 day
 ! Description: 
 ! Homepage: https://github.com/datagutt/datalist
@@ -16,7 +16,8 @@ gamer.no##[id$="gamer-skyskraper-venstre"]:upward(1)
 gamer.no##[id$="gamer-skyskraper-hoyre"]:upward(1)
 gamer.no##[id$="gamer-midtbanner"]:upward(1)
 gamer.no##[id$="gamer-midtbanner2"]:upward(1)
-gamer.no##[id*="gamer-netboard"]:upward(1)
+gamer.no##[id$="gamer-netboard"]:upward(1)
+gamer.no##[id*="gamer-netboard"]
 gamer.no##a:not([role="link"])[href^="/_a/c?name="]:upward(2)
 # Whitelist this as it is an anti-adblock check
 @@|https://s.bo3.no/gamer/vendor/_a/gpt.js
