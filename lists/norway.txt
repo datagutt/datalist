@@ -1,6 +1,6 @@
 [Adblock Plus 3.13]
 ! Title: 🇳🇴 Datalist - Norway edition
-! Version: 05April2025v2
+! Version: 18April2025v1
 ! Expires: 1 day
 ! Description: 
 ! Homepage: https://github.com/datagutt/datalist
@@ -12,13 +12,20 @@
 !gamer.no##[data-name="gamer_toppbanner"]
 gamer.no##div.col-12.col-lg-7
 gamer.no##.site__header + div + *:not(div,section,main,footer)
-gamer.no##[id$="gamer-skyskraper-venstre"]:upward(1):not(.col-12.col-lg-9)
-gamer.no##[id$="gamer-skyskraper-hoyre"]:upward(1):not(.col-12.col-lg-9)
-gamer.no##[id$="gamer-midtbanner"]:upward(1):not(.col-12.col-lg-9)
-gamer.no##[id$="gamer-midtbanner2"]:upward(1):not(.col-12.col-lg-9)
-gamer.no##[id$="gamer-netboard"]:upward(1):not(.col-12.col-lg-9)
+gamer.no##[id$="gamer-skyskraper-venstre"]:upward(1):not(.col-12.col-lg-9):not(.article__content):not(.article-container)
+gamer.no##[id$="gamer-skyskraper-hoyre"]:upward(1):not(.col-12.col-lg-9):not(.article__content):not(.article-container)
+gamer.no##[id$="gamer-midtbanner"]:upward(1):not(.col-12.col-lg-9):not(.article__content):not(.article-container)
+gamer.no##[id$="gamer-midtbanner2"]:upward(1):not(.col-12.col-lg-9):not(.article__content):not(.article-container)
+gamer.no##[id$="gamer-netboard"]:upward(1):not(.col-12.col-lg-9):not(.article__content):not(.article-container)
+gamer.no##[id*="gamer-brandboard"]:upward(1):not(.col-12.col-lg-9):not(.article__content):not(.article-container)
+
+gamer.no##[id*="gamer-skyskraper-venstre"]
+gamer.no##[id*="gamer-skyskraper-hoyre"]
+gamer.no##[id*="gamer-midtbanner"]
+gamer.no##[id*="gamer-midtbanner2"]
 gamer.no##[id*="gamer-netboard"]
 gamer.no##[id*="gamer-brandboard"]
+
 gamer.no##a:not([role="link"])[href^="/_a/c?name="]:upward(2)
 # Whitelist this as it is an anti-adblock check
 @@|https://s.bo3.no/gamer/vendor/_a/gpt.js
