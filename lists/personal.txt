@@ -1,6 +1,6 @@
 [Adblock Plus 3.13]
 ! Title: 🥷🏻 Datalist - Personal filters
-! Version: 09April2025v1
+! Version: 22April2025v1
 ! Expires: 1 day
 ! Description: Filters for my personal use, or that have not yet been added to the main lists.
 ! Homepage: https://github.com/datagutt/datalist
@@ -15,6 +15,3 @@ youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 
 ! Remove the "Unfollow" button on GitHub
 github.com##.user-following-container > form[action^="/users/unfollow"]
-
-! Remove annoying overlay on digger.tools
-digger.tools##[data-state="open"]

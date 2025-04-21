@@ -1,6 +1,6 @@
 [Adblock Plus 3.13]
 ! Title: 🥷🏻 Datalist
-! Version: 18April2025v1
+! Version: 22April2025v1
 ! Expires: 1 day
 ! Description: My personal filter list for Adblock Plus, uBlock Origin, AdGuard, AdBlock, Wipr, etc.
 ! Homepage: https://github.com/datagutt/datalist
