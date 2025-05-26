@@ -1,6 +1,6 @@
 [Adblock Plus 3.13]
 ! Title: 🥷🏻 Datalist
-! Version: 22April2025v1
+! Version: 27May2025v1
 ! Expires: 1 day
 ! Description: My personal filter list for Adblock Plus, uBlock Origin, AdGuard, AdBlock, Wipr, etc.
 ! Homepage: https://github.com/datagutt/datalist
@@ -20,3 +20,11 @@ https://abs.twimg.com/responsive-web/client-web/Chirp-Medium*.woff
 https://abs.twimg.com/fonts/chirp-bold-web.woff
 https://abs.twimg.com/fonts/chirp-heavy-web.woff
 https://abs.twimg.com/fonts/chirp-regular-web.woff
+
+! Remove the translation parameter from Reddit
+||reddit.com^$removeparam=tl
+
+
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-12371760
+! note: *needs to be specific to the /status path or will cause problems*
+.com/*/status/$doc,removeparam=t,domain=twitter.com|x.com
