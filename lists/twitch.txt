@@ -1,6 +1,6 @@
 [Adblock Plus 3.13]
 ! Title: 🎮 Datalist - Twitch
-! Version: 20March2025v1
+! Version: 17July2025v1
 ! Expires: 1 day
 ! Description: 
 ! Homepage: https://github.com/datagutt/datalist
@@ -14,6 +14,5 @@ twitch.tv##[data-a-target="directory-banner-ad-slot"]
 twitch.tv##[data-a-target="directory-card-ad-slot"] 
 twitch.tv##.stream-display-ad__wrapper
 twitch.tv##.video-player--stream-display-ad_lower-third:style(height: 100% !important;)
-twitch.tv##+js(twitch-videoad)
 xarth.tv
 *.xarth.tv
