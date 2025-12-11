@@ -1,6 +1,6 @@
 [Adblock Plus 3.13]
 ! Title: 🥷🏻 Datalist
-! Version: 17October2025v1
+! Version: 11December2025v1
 ! Expires: 1 day
 ! Description: My personal filter list for Adblock Plus, uBlock Origin, AdGuard, AdBlock, Wipr, etc.
 ! Homepage: https://github.com/datagutt/datalist
@@ -24,10 +24,13 @@ https://abs.twimg.com/fonts/chirp-regular-web.woff
 ! Remove the translation parameter from Reddit
 ||reddit.com^$removeparam=tl
 
-
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-12371760
 ! note: *needs to be specific to the /status path or will cause problems*
 .com/*/status/$doc,removeparam=t,domain=twitter.com|x.com
 
 ! Remove the "have you starred" dialog on digger.tools
 digger.tools##+js(set-local-storage-item, star-reminder.starred, true)
+
+! TikTok - don't stop, make it pop, DJ, blow my speakers up'
+tiktok.com##div.banner-ads
+tiktok.com##div.video-details__banner-ads
