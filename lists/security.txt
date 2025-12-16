@@ -1,6 +1,6 @@
 [Adblock Plus 3.13]
 ! Title: 🔒 Datalist - Privacy and security filters
-! Version: 17October2025v1
+! Version: 16December2025v1
 ! Expires: 1 day
 ! Description: Filters for privacy and security.
 ! Homepage: https://github.com/datagutt/datalist
@@ -28,3 +28,6 @@ youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 ! loveable analytics
 /~flock.js$script
 /~api/analytics
+
+! supabase analyitcs
+*.supabase.co/rest/v1/analytics_events
