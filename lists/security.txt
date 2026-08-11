@@ -8,7 +8,6 @@
 aegis.trovo.live
 tdm.trovo.live:8013
 api.vigo.one
-rocket.cozy.tv
 
 extensions-hub.com
 
