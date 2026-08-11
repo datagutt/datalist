@@ -14,11 +14,6 @@ extensions-hub.com
 lordoftheentertainingostriches.com
 *.lordoftheentertainingostriches.com
 
-! Separate this to a separate AD list?
-||www.facebook.com/api/graphql/$xhr,replace=/\{"brs_content_label":[^\n]+?"category":"ENGAGEMENT[^\n]+?"cursor":"[^"]+"\}/{}/g,badfilter
-||www.facebook.com/api/graphql/$xhr,replace=/("category":"ENGAGEMENT"[^\n]+?"comet_sections":)\{[^\n]+?post_inform_treatment":[^}]+\}(,"encrypted_tracking)/\$1{}\$2/g
-
-dlive.tv##+js(aopw, Fingerprint2)
 api.im.qcloud.com
 
 youtube.com##ytd-rich-item-renderer:has(ytd-display-ad-renderer)
