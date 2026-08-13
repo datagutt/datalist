@@ -1,6 +1,6 @@
 [Adblock Plus 3.13]
 ! Title: 🇳🇴 Datalist - Norway edition
-! Version: 18April2025v1
+! Version: 13August2026v1
 ! Expires: 1 day
 ! Description: 
 ! Homepage: https://github.com/datagutt/datalist
@@ -35,6 +35,7 @@ gamer.no##a:not([role="link"])[href^="/_a/c?name="]:upward(2)
 ! Side note: The sponsor and jobs part of the site is not blocked as it is not intrusive
 kode24.no##.preview.hot::before:style(display: none;)
 kode24.no##div#top-bar-ad
+kode24.no##div.partner-pages-2-banner
 
 ! TU Media
 digi.no,tu.no###brandBoardTop
