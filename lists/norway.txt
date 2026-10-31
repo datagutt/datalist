@@ -1,6 +1,6 @@
 [Adblock Plus 3.13]
 ! Title: 🇳🇴 Datalist - Norway edition
-! Version: 31October2026v1
+! Version: 31October2026v3
 ! Expires: 1 day
 ! Description: 
 ! Homepage: https://github.com/datagutt/datalist
@@ -27,7 +27,9 @@ gamer.no##[id*="gamer-netboard"]
 gamer.no##[id*="gamer-brandboard"]
 
 gamer.no##a:not([role="link"])[href^="/_a/c?name="]:upward(2)
-# Whitelist this as it is an anti-adblock check
+# Keep Gamer.no’s ad proxy check in its successful ad-rendered state
+gamer.no##+js(set-constant, __adproxyAdRendered, true)
+# This is only preloaded by the page, so the exception does not execute it
 @@|https://s.bo3.no/gamer/vendor/_a/gpt.js
 
 ! Kode24.no
